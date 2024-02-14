@@ -162,7 +162,7 @@ footer > section > a {
 
 .section-one > figure > img {
     width: 25rem;
-    height: 18.125;
+    height: 18.125rem;
 }
 
 .sec-one-art-two {
@@ -205,5 +205,15 @@ footer > section > a {
 }
 
 /* about us */
+.sec-one-art {
+    display: flex;
+    flex-direction: row;
+}
+
+.sec-two-art {
+    display: flex;
+    flex-direction: row;
+}
+
 
 /* gallery */
