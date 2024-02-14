@@ -8,16 +8,18 @@
         <meta name="keywords" content="Pizzadan, Italiaans restaurant, Sardijnse gerechten, pizza, pasta, voorgerechten, desserts, Italiaanse keuken, culinaire ervaring, verse ingrediënten, lokale leveranciers">
         <title><?php echo $metaData['pagetitle'] ?></title>
         <link rel="stylesheet" type="text/css" href="styles/reset.css">
-        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link rel="stylesheet" type="text/css" href="./styles/style.css">
         <script src="https://kit.fontawesome.com/c1efbad309.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-            <img src="" alt="">
+            <img src="./images/textLogo.png" alt="">
             <nav>
-                <a href="./index.html">HOME</a>
-                <a href="./ourMenu.html">OUR MENU</a>
-                <a href="./aboutUs.html">ABOUT US</a>
-                <a href="./gallery.html">GALLERY</a>
+                <?php
+                    $pages = ['index' => 'HOME', 'ourMenu' => 'OUR MENU', 'aboutUs' => 'ABOUT US', 'gallery' => 'GALLERY'];
+                    foreach ($pages as $file => $name) {
+                    echo "<a href=\"./$file.php\">$name</a>";
+                    }
+                ?>
             </nav>
         </header>
