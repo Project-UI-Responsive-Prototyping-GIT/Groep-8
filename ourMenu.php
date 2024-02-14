@@ -19,7 +19,7 @@
                 Ad commodi quam quas error ex iure architecto quo possimus dolorum? Molestiae provident 
                 consequatur quas nostrum reprehenderit qui. Ad ut ab voluptas!
             </p>
-            <img src="./images/Schermafbeelding 2024-02-05 100854.png" alt="logo">
+            <img src="./images/fullLogo.png" alt="logo">
         </article>
         <figure>
             <img src="https://picsum.photos/400/290" alt="foto van een gerecht">
