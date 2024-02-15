@@ -205,6 +205,25 @@ footer > section > a {
 }
 
 /* about us */
+body:has(.aboutUs-container) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutUs-container {
+    width: 80%;
+}
+
+.aboutUs-container > section > * {
+    margin: 3.125rem 0;
+}
+
+.sec-one-art > p,
+.sec-two-art > p {
+    margin-inline: 1rem;
+}
+
 .sec-one-art {
     display: flex;
     flex-direction: row;
@@ -215,5 +234,9 @@ footer > section > a {
     flex-direction: row;
 }
 
+.aboutUs-container > section:has(video) {
+    display: flex;
+    justify-content: center;
+}
 
 /* gallery */
