@@ -38,7 +38,7 @@
                         <i class="fa-brands fa-facebook-f fa-2xl"></i>
                         <i class="fa-brands fa-instagram fa-2xl"></i>
                     </article>
-                    <h3>info@pizzaden</h3>
+                    <h3>info@pizzaden.nl</h3>
                 </div>
                 <a href="#"><img src="./images/kalender.png" alt="calender om te reserveren"></a>
             </section>
