@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html lang="nl">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="S. Stikkelorum">
-        <meta name="keywords" content="">
-        <title>PizzaDen | Gallery</title>
-        <link rel="stylesheet" type="text/css" href="styles/reset.css">
-        <link rel="stylesheet" type="text/css" href="styles/style.css">
-        <script src="https://kit.fontawesome.com/c1efbad309.js" crossorigin="anonymous"></script>
+    $metaData = [
+        'pageauthor' => 'P. Staats',
+        'pagetitle' => 'Ons menu'
+    ];
     </head>
     <body>
         <header>
