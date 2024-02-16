@@ -62,7 +62,44 @@ header > nav > a {
 header > nav > a:hover {
     color: #8AB83E;
 }
+/* Home */
+#alineasOnderBanner {
+    display: flex;
+    max-width: 200ch;
+    gap: 20vw;
+    margin-top: 20px;
+    margin-left: 100px;
 
+}
+#fotoEnAlinea3  {
+    margin-top: 80px;
+    margin-left: 100px;
+    display: flex;
+    gap: 20vw;
+    max-width: 200ch;
+    align-items: center;
+}
+#tekstOnderFoto {
+    margin-top: 100px;
+    margin-left: 100px;
+    max-width: 70ch;
+    margin-bottom: 100px;
+}
+/* Gallery */
+#images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+#images img {
+    width: 500px;
+    height: 300px;
+    padding: 50px;
+}
 /* footer */
 footer {
     background-color: #565264;
