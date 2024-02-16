@@ -159,8 +159,6 @@ footer > section > a {
     align-items: center;
 }
 
-/* index */
-
 /* our menu */
 .ons-menu-container {
     display: flex;
@@ -276,4 +274,3 @@ body:has(.aboutUs-container) {
     justify-content: center;
 }
 
-/* gallery */
