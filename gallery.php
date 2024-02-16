@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
-        <meta name="author" content="P. Staats">
+        <meta name="author" content="S. Stikkelorum">
         <meta name="keywords" content="">
         <title>PizzaDen | Gallery</title>
         <link rel="stylesheet" type="text/css" href="styles/reset.css">
