@@ -8,11 +8,7 @@
     
     loadView('header', $metaData) 
 ?>
-<body>
 <main>
-        <header>
-            <?php include 'layout/functions.php'; include 'layout/header.php';  ?>
-        </header>
     <img src="./images/Banner Home.jpg">
     <section id="alineasOnderBanner">
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt ornare massa eget egestas purus viverra accumsan in. Mauris ultrices eros in cursus turpis massa tincidunt dui. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Ut morbi tincidunt augue interdum velit. Sed risus ultricies tristique nulla aliquet enim tortor. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Neque gravida in fermentum et sollicitudin ac. Aliquam nulla facilisi cras fermentum. Senectus et netus et malesuada fames ac turpis egestas sed. Tempor orci eu lobortis elementum. Commodo ullamcorper a lacus vestibulum. Lacinia quis vel eros donec ac odio tempor orci. Proin sed libero enim sed faucibus turpis in eu mi.</p>
@@ -28,7 +24,6 @@
 
     </article>
 </main>
-  </body>  
 <?php
     loadView('footer')
 ?>

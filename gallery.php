@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-<html lang="nl">
-    <head>
+<?php
+    include 'includes/functions.php';
+
     $metaData = [
-        'pageauthor' => 'P. Staats',
-        'pagetitle' => 'Ons menu'
+        'pageauthor' => 'S. Stikkelorum',
+        'pagetitle' => 'HOME'
     ];
-    </head>
-    <body>
-        <header>
-            <?php include 'layout/functions.php'; include 'layout/header.php';  ?>
-        </header>
-        <main>
-        <section id="images">
+    
+    loadView('header', $metaData) 
+?>
+<main>
+    <section id="images">
         <img src="./images/gallery foto1.png">
         <img src="./images/gallery foto2.png">
         <img src="./images/gallery foto3.png">
@@ -22,8 +20,8 @@
         <img src="./images/gallery foto8.png">
         <img src="./images/gallery foto9.png">
         <img src="./images/gallery foto10.png">
-        </section>
-        </main>
-    <?php loadView('footer') ?>
-    </body>
-</html>
+    </section>
+</main>
+<?php
+    loadView('footer')
+?>
