@@ -274,3 +274,31 @@ body:has(.aboutUs-container) {
     justify-content: center;
 }
 
+/* media query */
+@media screen and (max-width: 480px) {
+    /* debug */
+    /* #debug-main,
+    footer {
+        display: none;
+    } */
+
+    /* header */
+    header > img {
+        margin: 30px 20px;
+    }
+
+    header > nav {
+        display: none;
+    }
+
+    /* footer */
+
+    /* home */
+
+    /* our menu */
+    /* .ons-menu-container {} */
+
+    /* about us */
+
+    /* gallery */
+}
