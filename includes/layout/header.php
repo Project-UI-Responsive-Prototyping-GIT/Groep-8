@@ -7,7 +7,7 @@
         <meta name="author" content="<?php echo $metaData['pageauthor'] ?>">
         <meta name="keywords" content="Pizzadan, Italiaans restaurant, Sardijnse gerechten, pizza, pasta, voorgerechten, desserts, Italiaanse keuken, culinaire ervaring, verse ingrediënten, lokale leveranciers">
         <title><?php echo $metaData['pagetitle'] ?></title>
-        <link rel="stylesheet" type="text/css" href="styles/reset.css">
+        <link rel="stylesheet" type="text/css" href="styles/reset.css">`<!-- Reset browser default styles -->
         <link rel="stylesheet" type="text/css" href="./styles/style.css">
         <script src="https://kit.fontawesome.com/c1efbad309.js" crossorigin="anonymous"></script>
     </head>
