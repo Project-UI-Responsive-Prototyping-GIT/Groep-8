@@ -338,8 +338,8 @@ body:has(.aboutUs-container) {
         top: -7px;
         left: -5px;
         cursor: pointer;
-        opacity: 0; /* hide the checkbox */
-        z-index: 2; /* make sure the checkbox is above the hamburger icon */
+        opacity: 0;
+        z-index: 2;
     }
 
     #menuToggle span {
@@ -392,12 +392,12 @@ body:has(.aboutUs-container) {
         position: absolute;
         width: 400px; /* Updated width */
         margin: -100px 0 0 -200px;
-        padding: 100px; /* Updated padding */
+        width: 100vh;
         padding-top: 125px;
+        padding-left: 2rem;
+        padding-bottom: 2rem;
         background: #ededed;
         list-style-type: none;
-        -webkit-font-smoothing: antialiased;
-        /* to stop flickering of text in safari */
         transform-origin: 0% 0%;
         transform: translate(100%, 0);
         opacity: 0;
@@ -406,6 +406,13 @@ body:has(.aboutUs-container) {
             opacity 0.55s ease;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        font-family: "Roboto", sans-serif; /* Added font-family */
+        font-size: 1.5rem; /* Added font-size */
+        font-weight: 400; /* Added font-weight */
+    }
+
+    #menu li {
+        margin: 0.8rem 0;
     }
     
     /* footer */

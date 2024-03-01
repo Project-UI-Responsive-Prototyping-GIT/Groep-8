@@ -1,3 +1,4 @@
+<?php $pages = ['index' => 'HOME', 'ourMenu' => 'OUR MENU', 'aboutUs' => 'ABOUT US', 'gallery' => 'GALLERY']; ?>
 <!DOCTYPE html>
 <html lang="nl">
     <head>
@@ -16,10 +17,28 @@
             <img src="./images/textLogo.png" alt="">
             <nav>
                 <?php
-                    $pages = ['index' => 'HOME', 'ourMenu' => 'OUR MENU', 'aboutUs' => 'ABOUT US', 'gallery' => 'GALLERY'];
                     foreach ($pages as $file => $name) {
                     echo "<a href=\"./$file.php\">$name</a>";
                     }
                 ?>
+            </nav>
+            <nav role="navigation" class="mobile">
+                <div id="menuToggle">
+                    <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it. -->
+                    <input type="checkbox" />
+    
+                    <span></span>
+                    <span></span>
+                    <span></span>
+    
+
+                    <ul id="menu">
+                        <?php
+                            foreach ($pages as $file => $name) {
+                            echo "<a href=\"./$file.php\"><li>$name</li></a>";
+                            }
+                        ?>
+                    </ul>
+                </div>
             </nav>
         </header>
