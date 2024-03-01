@@ -89,7 +89,7 @@
         </article>
     </section>
     <section>
-        <video controls width="1080">
+        <video controls width="100%"> <!-- width="1080" -->
             <source src="./documents/media/pexels-rafa-20073998.mp4" type="video/mp4">
             <p>Je browser ondersteunt HTML video niet</p>
         </video>

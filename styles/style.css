@@ -86,20 +86,43 @@ header > nav > a:hover {
     margin-bottom: 100px;
 }
 /* Gallery */
-#images {
+/* #images-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     margin-top: 20px;
     margin-left: 200px;
-}
+} */
 
-#images img {
+/* #images-grid > img {
     width: 500px;
     height: 300px;
     padding: 50px;
+} */
+
+main:has(#images-grid) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
 }
+
+#images-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(10%, 1fr)); /* Decrease the width of the columns */
+    gap: 1rem;
+    width: 80%;
+}
+
+#images-grid > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* footer */
 footer {
     background-color: #565264;
@@ -220,23 +243,18 @@ footer > section > a {
 }
 
 .eten-container-background {
-    width: 78.75rem;
+    width: 100%;    /* 78.75rem */
 }
 
-.eten-menu-container-half1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
+.eten-menu-container-half1,
 .eten-menu-container-half2 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .menu-deel {
-    width: 31.25rem;
+    width: 40%;    /* 31.25rem */
 }
 
 /* about us */
@@ -277,9 +295,9 @@ body:has(.aboutUs-container) {
 /* media query */
 @media screen and (max-width: 480px) {
     /* debug */
-    .section-two {
+    /* .section-two {
         display: none;
-    }
+    } */
 
     /* all */
     main {
@@ -323,6 +341,38 @@ body:has(.aboutUs-container) {
     }
 
     /* home */
+    main:has(#alineasOnderBanner) {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #alineasOnderBanner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    #fotoEnAlinea3 {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    #fotoEnAlinea3 > img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    #tekstOnderFoto {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
 
     /* our menu */
     /* .ons-menu-container {} */
@@ -367,7 +417,52 @@ body:has(.aboutUs-container) {
         height: auto;
     }
 
+    .eten-container-background {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .eten-menu-container-half1,
+    .eten-menu-container-half2 {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .menu-deel {
+        width: 100%;
+        margin: 0.5rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     /* about us */
+    .aboutUs-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec-one-art {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .sec-one-art > p,
+    .sec-two-art > p {
+        margin: 0;
+    }
+
+    .sec-two-art {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1rem;
+        padding: 0;
+    }
 
     /* gallery */
 }
