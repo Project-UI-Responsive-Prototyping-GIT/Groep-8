@@ -1,5 +1,5 @@
         <footer>
-            <section>
+            <section class="footer-section">
                 <img src="./images/fullLogo.png" alt="full logo">
                 <article>
                     <h3>OPENINGSTIJDEN</h3>
