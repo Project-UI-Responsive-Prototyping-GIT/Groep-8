@@ -6,7 +6,9 @@
         'pagetitle' => 'Ons menu'
     ];
     
-    loadView('header', $metaData) 
+    loadView('header', $metaData);
+
+    include 'includes/layout/floating_button.php';
 ?>
 <main class="aboutUs-container">
     <h1>About us</h1>

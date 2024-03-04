@@ -186,6 +186,98 @@ footer > section > a {
     align-items: center;
 }
 
+/* floating / asid btn */
+#floating-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#floating-button > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    height: 4rem;
+    width: 4rem;
+}
+
+#floating-button > button > img {
+    height: 2rem;
+    width: auto;
+    
+}
+
+#menu-floating-btn-closing {
+    display: none;
+}
+
+#booking-form {
+    display: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#menu-floating-btn {
+    position: absolute;
+    bottom: 4.5rem;
+    right: 0;
+    background-color: #f8f8f8;
+    border-radius: 1rem 1rem 0 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 10rem;
+}
+
+#menu-floating-btn button {
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+#menu-floating-btn button:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 0.5rem;
+    transition: 0.2s;
+}
+
+#booking-form input[type="text"],
+#booking-form input[type="tel"],
+#booking-form input[type="email"],
+#booking-form input[type="number"],
+#booking-form input[type="date"],
+#booking-form input[type="submit"] {
+    display: block;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#booking-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+#booking-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#booking-form input[type="submit"]:focus {
+    outline: none;
+}
+
 /* our menu */
 .ons-menu-container {
     display: flex;

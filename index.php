@@ -6,7 +6,9 @@
         'pagetitle' => 'HOME'
     ];
     
-    loadView('header', $metaData) 
+    loadView('header', $metaData);
+
+    include 'includes/layout/floating_button.php';
 ?>
 <main>
     <img class="home-main-img" src="./images/Banner Home.jpg">

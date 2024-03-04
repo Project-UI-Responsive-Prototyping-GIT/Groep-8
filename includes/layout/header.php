@@ -11,10 +11,11 @@
         <link rel="stylesheet" type="text/css" href="styles/reset.css"> <!-- Reset browser default styles -->
         <link rel="stylesheet" type="text/css" href="./styles/style.css">
         <script src="https://kit.fontawesome.com/c1efbad309.js" crossorigin="anonymous"></script>
+        <script type="module" src="./scripts/app.js" defer></script>
     </head>
     <body>
         <header>
-            <img src="./images/textLogo.png" alt="">
+            <img src="./images/textLogo.png" alt="pizzaden logo">
             <nav>
                 <?php
                     foreach ($pages as $file => $name) {
@@ -24,7 +25,6 @@
             </nav>
             <nav role="navigation" class="mobile">
                 <div id="menuToggle">
-                    <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it. -->
                     <input type="checkbox" />
     
                     <span></span>

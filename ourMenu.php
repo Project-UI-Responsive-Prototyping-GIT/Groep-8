@@ -1,13 +1,14 @@
 <?php
     include 'includes/functions.php';
-    include 'includes/layout/floating_button.php';
 
     $metaData = [
         'pageauthor' => 'P. Staats',
         'pagetitle' => 'Ons menu'
     ];
     
-    loadView('header', $metaData) 
+    loadView('header', $metaData);
+
+    include 'includes/layout/floating_button.php';
 ?>
 <main class="ons-menu-container">
     <section class="section-one">
