@@ -1,5 +1,6 @@
 <?php
     include 'includes/functions.php';
+    include 'includes/layout/floating_button.php';
 
     $metaData = [
         'pageauthor' => 'P. Staats',
