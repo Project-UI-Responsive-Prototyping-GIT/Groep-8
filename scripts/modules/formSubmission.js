@@ -1,6 +1,7 @@
+// FIXME: Deze module is nog niet af, de fetch werkt nog niet
 async function formSubmission() {
     try {
-        const response = await fetch('./server/bookingHandler.php', {
+        const response = await fetch('server/bookingHandler.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -14,18 +15,22 @@ async function formSubmission() {
                 aantalPersonen: document.getElementById('aantal_personen').value,
                 tijd: document.getElementById('tijd').value,
                 date: document.getElementById('date').value,
-                toestemming: document.getElementById('toestemming').checked
+                toestemming: document.getElementById('toestemming').value
             })
         });
-        if (response.ok) {
-            const data = await response.json();
-            // hier kan je de data verwerken in de front-end (bijv. een succesmelding tonen)
-            console.log(data);
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
         }
 
-        throw new Error('Request niet gelukt!');
+        const data = await response.json();
+
+        // Alert the user
+        // alert('Your booking has been sent!');
+        console.log(data);
+
     } catch (error) {
-        console.error(error);
+        console.error(`onverwachte error met de fetch: ${error.message}`);
     }
 }
 
