@@ -208,6 +208,13 @@ footer > section > a {
     width: 4rem;
 }
 
+#floating-button > button:hover {
+    background-color: #f0f0f0;
+    transition: 0.2s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1);
+}
+
 #floating-button > button > img {
     height: 2rem;
     width: auto;
@@ -231,7 +238,7 @@ footer > section > a {
     position: absolute;
     bottom: 4.5rem;
     right: 0;
-    background-color: #f8f8f8;
+    background-color: #D59465; /* #f8f8f8 */
     border-radius: 1rem 1rem 0 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 1rem;
@@ -488,7 +495,7 @@ body:has(.aboutUs-container) {
         padding-top: 125px;
         padding-left: 2rem;
         padding-bottom: 2rem;
-        background: #ededed;
+        background: #D59465; /* #ededed */
         list-style-type: none;
         transform-origin: 0% 0%;
         transform: translate(100%, 0);
