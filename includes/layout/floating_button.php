@@ -6,15 +6,18 @@
             </li>
         </ul>
         <section id="booking-section">
-            <form id="booking-form" class="shown" action="">
+            <form id="booking-form" class="shown" action="./server/bookingHandler.php" method="post">
+                <p>Door dit formulier in te dienen, gaat u akkoord met ons <a href="./privacybeleid.php" target="_blank">privacybeleid</a>.</p>
                 <input type="text" name="name" id="name" placeholder="Voornaam" maxlength="50" required>
                 <input type="text" name="tussenvoegsel" id="tussenvoegsel" placeholder="Tussenvoegsel" maxlength="15">
                 <input type="text" name="lastname" id="lastname" placeholder="Achternaam" maxlength="50" required>
-                <input type="tel" name="telefoonnummer" id="telefoonnummer" placeholder="Telefoonnummer" pattern="[\+\d\(\)\.\s-]*" required>
+                <input type="tel" name="telefoonnummer" id="telefoonnummer" placeholder="Telefoonnummer" required> <!-- pattern="pattern="[\+\d\(\)\.\s-]*" -->
                 <input type="email" name="email" id="email" placeholder="E-mail" required>
                 <input type="number" name="aantal_personen" id="aantal_personen" placeholder="Aantal personen" min="1" max="20" required>
                 <input type="number" name="tijd" id="tijd" placeholder="Tijd in uur" min="16" max="21" required>
                 <input type="date" name="date" id="date" placeholder="Datum" required>
+                <input type="checkbox" name="toestemming" id="toestemming" required>
+                <label for="toestemming">Ik ga akkoord met het verzenden van mijn gegevens voor reserveringsdoeleinden.</label>
                 <input type="submit" value="Reserveer">
             </form>
         </section>
