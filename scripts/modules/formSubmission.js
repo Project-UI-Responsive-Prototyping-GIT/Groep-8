@@ -1,4 +1,3 @@
-// FIXME: Deze module is nog niet af, de fetch werkt nog niet
 async function formSubmission() {
     try {
         const response = await fetch('server/bookingHandler.php', {
@@ -28,6 +27,7 @@ async function formSubmission() {
         // Alert the user
         // alert('Your booking has been sent!');
         console.log(data);
+        console.log(response);
 
     } catch (error) {
         console.error(`onverwachte error met de fetch: ${error.message}`);
