@@ -238,7 +238,7 @@ footer > section > a {
     position: absolute;
     bottom: 4.5rem;
     right: 0;
-    background-color: #D59465; /* #f8f8f8 */
+    background-color: #D59465;
     border-radius: 1rem 1rem 0 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 1rem;
