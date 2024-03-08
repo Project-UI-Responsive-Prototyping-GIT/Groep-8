@@ -27,20 +27,6 @@
     $datum = $data['datum'];
     $toestemming = $data['toestemming']; // denk dat dit niet nodig is
 
-    // TODO: zorgen dat de user een bevestiging mail krijgt.
-    $emailSubject = "Bevestiging van uw reservering bij PizzaDen";
-    $emailMessage = "Beste $naam\n Dit is een automatische bevestiging om te laten weten dat we uw reservering hebben ontvangen bij PizzaDen. Hieronder vindt u de details van uw reservering:\n\nNaam: $naam $tussenvoegsel $achterNaam\nTelefoonnummer: $telefoonnummer\nEmail: $email\nDatum: $datum\nTijd: $tijd\nAantal personen: $aantal_personen\n\nU hoeft niet te antworden op deze mail, aangezien dit een automatische bevestiging is. Als u vragen heeft over uw reservering of als u wijzigignen wilt aanbrengen, kunt u contact met ons opnemen via telefoon 071-7431791 of via email info@pizzaden.nl. We helpen u graag verder.\n\nMet vriendelijke groet,\nPizzaDen";
-    $emailMessage = strip_tags($emailMessage); // Remove HTML tags
-    $emailMessage = wordwrap($emailMessage, 70);
-    $emailHeaders = "From: voerSenderMail@gmail.com";
-
-    // FIXME: zorgen dat de mail ook daadwerkelijk verstuurd wordt geeft nu een Unexpected token error
-    // if (mail($email, $emailSubject, $emailMessage, $emailHeaders)) {
-    //     $success = true;
-    // } else {
-    //     echo json_encode(array('error' => 'Unable to send email.'));
-    // }
-
     $success = true; // tijdelijke oplossing
 
     // Return response naar de client-side
