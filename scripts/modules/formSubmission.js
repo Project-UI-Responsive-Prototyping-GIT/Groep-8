@@ -6,14 +6,14 @@ async function formSubmission() {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                name: document.getElementById('name').value,
+                naam: document.getElementById('naam').value,
                 tussenvoegsel: document.getElementById('tussenvoegsel').value,
-                lastname: document.getElementById('lastname').value,
+                achterNaam: document.getElementById('achterNaam').value,
                 telefoonnummer: document.getElementById('telefoonnummer').value,
                 email: document.getElementById('email').value,
                 aantalPersonen: document.getElementById('aantal_personen').value,
                 tijd: document.getElementById('tijd').value,
-                date: document.getElementById('date').value,
+                datum: document.getElementById('datum').value,
                 toestemming: document.getElementById('toestemming').value
             })
         });
@@ -24,8 +24,8 @@ async function formSubmission() {
 
         const data = await response.json();
 
-        // Alert the user
-        alert(data.success ? `Bedankt ${data.name} voor het reserveren! op ${data.date} om ${data.tijd}:00 Uw krijgt een bevestiging per mail. op ${data.email}` : data.error);
+        // Alert de user
+        alert(data.success ? `Bedankt ${data.naam} voor het reserveren! op ${data.datum} om ${data.tijd}:00 Uw krijgt een bevestiging per mail. op ${data.email}` : data.error);
         console.log(data); // bug testing
         console.log(response); // bug testing
 
