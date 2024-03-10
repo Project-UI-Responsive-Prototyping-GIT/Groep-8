@@ -67,6 +67,16 @@ header > nav > a:hover {
     color: #8AB83E;
 }
 /* Home */
+
+@media screen and (max-width: 768px){
+    #alineasOnderBanner {
+        display: flex;
+        gap: 20vw;
+        margin-top: 20px;
+        margin-right: 100px;
+    
+    }
+}
 #alineasOnderBanner {
     display: flex;
     max-width: 200ch;
@@ -90,6 +100,7 @@ header > nav > a:hover {
     margin-bottom: 100px;
 }
 /* Gallery */
+
 main:has(#images-grid) {
     display: flex;
     flex-direction: column;
