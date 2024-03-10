@@ -68,15 +68,7 @@ header > nav > a:hover {
 }
 /* Home */
 
-@media screen and (max-width: 768px){
-    #alineasOnderBanner {
-        display: flex;
-        gap: 20vw;
-        margin-top: 20px;
-        margin-right: 100px;
-    
-    }
-}
+
 #alineasOnderBanner {
     display: flex;
     max-width: 200ch;
@@ -753,4 +745,98 @@ body:has(.aboutUs-container) {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     }
 
+}
+
+@media screen and (max-width: 768px){
+    #alineasOnderBanner {
+        display: flex;
+        margin-right: 10%;
+        max-width: 600ch;
+        gap: 50px;
+        margin-left: 40px;
+        font-size: 14px;
+    }
+    
+    #fotoEnAlinea3 {
+        display: flex;
+        margin-right: 10%;
+        max-width: 600ch;
+        gap: 120px;
+        margin-left: 40px;
+        font-size: 14px;
+    }
+    
+    #fotoEnAlinea3 > img {
+        max-width: 250px;
+    }
+    #tekstOnderFoto {
+        display: flex;
+        margin-left: 40px;
+        max-width: 100ch;
+        margin-right: 60%;
+        font-size: 14px;
+    }
+    header {
+        font-size: 12px;
+        gap: 0;
+        padding: 0;
+        width: 100%;
+    }
+    header > img {
+        max-width: 250px;
+        margin-left: 40px;
+    }
+    header > nav {
+        margin-right: 100px;
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        margin-left: 0;
+        margin-right: 20px;
+        width: auto;
+    }
+    
+    header > nav > a {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    footer > section  {
+        font-size: 13px;
+        margin-right: 80px;
+
+    }
+    footer > section > img {
+        height: 6rem;
+        width: auto;
+    }
+    #floating-button {
+        position: fixed;
+        right: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .sec-one-art-one {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sec-one-art-one > p {
+        width: 50%;
+    }
+
+    .sec-one-art-one > h1 {
+        width: 50%;
+    }
+    figure {
+        max-width: 10%;
+        gap: 10px;
+
+
+    }
+    .ons-menu-container > .section-one > .sec-one-art-one > img {
+        visibility: hidden;
+    }
 }
