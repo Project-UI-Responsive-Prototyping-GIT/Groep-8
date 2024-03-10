@@ -828,7 +828,7 @@ body:has(.aboutUs-container) {
     }
 
     .sec-one-art-one > h1 {
-        width: 50%;
+        width: 100%;
     }
     figure {
         max-width: 10%;
@@ -839,4 +839,7 @@ body:has(.aboutUs-container) {
     .ons-menu-container > .section-one > .sec-one-art-one > img {
         visibility: hidden;
     }
-}
+    .sec-one-art-two > p    {
+        max-width: 40ch;
+        margin-left: 50px;
+    }
