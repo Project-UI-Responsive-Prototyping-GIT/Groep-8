@@ -811,32 +811,46 @@ body:has(.aboutUs-container) {
         height: 6rem;
         width: auto;
     }
-    #floating-button {
-        position: fixed;
-        right: 2rem;
+
+    /* our menu */
+    .section-one {
+        width: 100%;
         display: flex;
         flex-direction: column;
-    }
-    .sec-one-art-one {
-        flex-direction: column;
         align-items: center;
-        text-align: center;
     }
 
-    .sec-one-art-one > p {
-        width: 50%;
+    .section-one img:not(.sec-one-art-one > img) {
+        margin: 1rem 0;
     }
 
-    .sec-one-art-one > h1 {
-        width: 50%;
+    .section-one > figure {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 1rem;
     }
-    figure {
-        max-width: 10%;
-        gap: 10px;
 
-
+    .section-one > figure > img {
+        width: 30%;
+        height: auto;
     }
-    .ons-menu-container > .section-one > .sec-one-art-one > img {
-        visibility: hidden;
+
+    .sec-one-art-one {
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+        margin-top: 1rem;
+    }
+
+    .sec-one-art-two > p {
+        max-width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sec-one-art-two > img {
+        max-width: 15rem;
+        max-height: 13rem;
     }
 }
