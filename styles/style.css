@@ -575,9 +575,40 @@ body:has(.aboutUs-container) {
     .aboutUs-container > h1 {
         margin-left: 40%;
     }
-    .aboutUs-container > .sec-one-art > {
-        max-width: 100px;
-        max-height: 100px;
+    .sec-one-art > img {
+        max-width: 400px;
+        max-height: 400px;
+
+    }
+    .sec-one-art    {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .sec-two-art  {
+        flex-direction: column;
+    }
+    main:has(#images-grid) {
+        margin: 1rem 0;
+    }
+   
+    #images-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(10%, 1fr));
+        gap: 1rem;
+        width: 80%;
+    }
+   
+    #images-grid > img {
+        justify-self: center;
+        width: 70%;
+        height: auto;
+        object-fit:cover;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .sec-one-art-one > img {
+        visibility: hidden;
     }
 }
 
