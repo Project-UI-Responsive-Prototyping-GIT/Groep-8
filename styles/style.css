@@ -932,7 +932,7 @@ body:has(.aboutUs-container) {
     }
 
     .sec-one-art-one > p {
-        width: 50%;
+        width: 100%;
     }
 
     .sec-one-art-one > h1 {
@@ -950,5 +950,14 @@ body:has(.aboutUs-container) {
     .sec-one-art-two > p    {
         max-width: 40ch;
         margin-left: 50px;
+    }
+    .aboutUs-container  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .aboutUs-container > img {
+        height: 200px;
+        width: 200px;
     }
 }
