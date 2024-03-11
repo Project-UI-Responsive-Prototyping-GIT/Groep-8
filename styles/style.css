@@ -575,7 +575,7 @@ body:has(.aboutUs-container) {
     .aboutUs-container > h1 {
         margin-left: 40%;
     }
-    .aboutUs-container > .sec-one-art > img {
+    .aboutUs-container > .sec-one-art > {
         max-width: 100px;
         max-height: 100px;
     }
