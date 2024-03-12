@@ -10,8 +10,8 @@
 
     include 'includes/layout/floating_button.php';
 ?>
-<main>
-    <section id="images-grid">
+<main id="gallery-main">
+    <section id="gallery-images-grid">
         <img src="./images/gallery foto1.png" />
         <img src="./images/gallery foto2.png" />
         <img src="./images/gallery foto3.png" />
