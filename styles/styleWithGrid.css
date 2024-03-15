@@ -545,12 +545,9 @@ body:has(.aboutUs-container) {
         font-size: 14px;
     }
 
-    /* .slide-wrapper {
-        width: calc(728px * 3);
-    } */
 
     #slideshow .slide-wrapper {
-        width: calc(100% * 3); /* Adjust based on the number of slides */
+        width: calc(250% * 3); /* Adjust based on the number of slides */
     }
     
     #fotoEnAlinea3 {
