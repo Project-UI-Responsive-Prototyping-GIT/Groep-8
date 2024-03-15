@@ -356,7 +356,7 @@ main:has(img.home-main-img) > img {
 }
 
 .slide {
-    width: 728px;
+    width: 33.3%; /* 728px */
     float: left;
 }
 
@@ -543,6 +543,14 @@ body:has(.aboutUs-container) {
         gap: 50px;
         margin-left: 40px;
         font-size: 14px;
+    }
+
+    /* .slide-wrapper {
+        width: calc(728px * 3);
+    } */
+
+    #slideshow .slide-wrapper {
+        width: calc(100% * 3); /* Adjust based on the number of slides */
     }
     
     #fotoEnAlinea3 {
