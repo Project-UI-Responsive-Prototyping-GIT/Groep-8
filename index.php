@@ -20,13 +20,13 @@
             <section id="slideshow">
                 <section class="slide-wrapper">
                     <figure class="slide">
-                        <img class="slide-number" src="https://picsum.photos/400/200" alt="#">
+                        <img class="slide-number" src="./images/pizzaSlideShow1.jpg" alt="#">
                     </figure>
                     <figure class="slide">
-                        <img class="slide-number" src="https://picsum.photos/400/200" alt="#">
+                        <img class="slide-number" src="./images/pizzaSlideShow2.jpg" alt="#">
                     </figure>
                     <figure class="slide">
-                        <img class="slide-number" src="https://picsum.photos/400/200" alt="#">
+                        <img class="slide-number" src="./images/pizzaSlideShow3.jpg" alt="#">
                     </figure>
                 </section>
             </section>

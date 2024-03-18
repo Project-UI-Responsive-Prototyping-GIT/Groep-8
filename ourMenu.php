@@ -24,12 +24,12 @@
             <img src="./images/fullLogo.png" alt="logo">
         </article>
         <figure>
-            <img src="https://picsum.photos/400/290" alt="foto van een gerecht">
-            <img src="https://picsum.photos/400/290" alt="foto van een gerecht">
-            <img src="https://picsum.photos/400/290" alt="foto van een gerecht">
+            <img src="./images/pizzaOurMenu1.jpg" alt="foto van een gerecht">
+            <img src="./images/pizzaOurMenu2.jpg" alt="foto van een gerecht">
+            <img src="./images/pizzaOurMenu3.jpg" alt="foto van een gerecht">
         </figure>
         <article class="sec-one-art-two">
-            <img src="https://picsum.photos/600/319" alt="foto van een gerecht">
+            <img src="./images//pizzaOurMenu4.jpg" alt="foto van een gerecht">
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                 Distinctio, nulla ut laborum natus ea, quo ad autem praesentium sequi, 

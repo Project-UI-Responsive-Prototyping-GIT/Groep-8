@@ -17,7 +17,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur adipiscing. Neque aliquam vestibulum morbi blandit cursus risus. Sit amet mattis vulputate enim nulla aliquet porttitor lacus. Donec et odio pellentesque diam. Sed enim ut sem viverra. Enim nec dui nunc mattis enim. Molestie nunc non blandit massa enim nec dui nunc. Faucibus pulvinar elementum integer enim neque volutpat. Tortor posuere ac ut consequat semper viverra.
         </p>
         <article class="sec-one-art">
-            <img src="https://picsum.photos/620/450" alt="dummy foto">
+            <img src="./images/aboutUs1.jpg" alt="dummy foto">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Enim libero vel officia in recusandae blanditiis ipsa debitis accusamus nulla distinctio, 
@@ -42,7 +42,7 @@
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur adipiscing. Neque aliquam vestibulum morbi blandit cursus risus. Sit amet mattis vulputate enim nulla aliquet porttitor lacus. Donec et odio pellentesque diam. Sed enim ut sem viverra. Enim nec dui nunc mattis enim. Molestie nunc non blandit massa enim nec dui nunc. Faucibus pulvinar elementum integer enim neque volutpat. Tortor posuere ac ut consequat semper viverra.
             </p>
-            <img src="https://picsum.photos/620/450" alt="dummy foto">
+            <img src="./images/aboutUs2.jpg" alt="dummy foto">
         </article>
     </section>
     <section>
