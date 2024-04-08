@@ -707,6 +707,36 @@ footer > p {
 
 /* vacatures */
 
+.main-container {
+    background-color: black;
+    display: grid;
+    gap: 5rem;
+    grid-template-rows: auto;
+    padding: 2rem;
+    justify-content: center;
+
+}
+.box    {
+    border: 0.5rem;
+    border-color: #1a1a1a;
+    border-style: solid;
+    color: black;
+    background-color: #ffa500;
+    border-radius: 5px;
+    padding: 1rem 2rem 1rem 2rem;
+}
+.bold   {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.button {
+    border: black solid 2px;
+    background-color: black;
+    color: orange;
+    border-radius: 2rem;
+}
+
+
 /* reviews */
 .reviews-container {
     background-color: #404040;
