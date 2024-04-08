@@ -25,14 +25,5 @@
                     ?>
                 </nav>
             </section>
-            <section id="header-cart"> <!-- TODO: icon en tekst een anker -->
-                    <section id="header-cart-text">
-                        <p>&euro;<span id="header-cart-value">0.00</span></p>
-                        <p><span id="header-cart-items">0</span> items</p>
-                    </section>
-                    <a href="#"> <!-- TODO: shoping cart page -->
-                    <i class="fa-solid fa-basket-shopping fa-2xl"></i>
-                </a>
-            </section>
         </header>
     </body>
