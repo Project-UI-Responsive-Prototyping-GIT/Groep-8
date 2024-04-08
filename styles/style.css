@@ -47,7 +47,6 @@ header {
 
 #header-main {
     margin: 0 auto;
-    padding-left: 102.67px; /* width van #header-cart */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,19 +66,6 @@ header {
 #header-main > nav > a:hover {
     color: #8AB83E;
 }
-
-#header-cart {
-    display: flex;
-    width: fit-content;
-    margin-right: 2rem;
-}
-
-#header-cart > a {
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-}
-
 /* main */
 main {
     grid-area: main;
@@ -718,22 +704,29 @@ footer > p {
 }
 .box    {
     border: 0.5rem;
-    border-color: #1a1a1a;
+    border-color: #404040;
     border-style: solid;
     color: black;
     background-color: #ffa500;
     border-radius: 5px;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem 2rem;
 }
 .bold   {
     font-weight: bold;
     font-size: 1.5rem;
 }
-.button {
+.button-vacature {
     border: black solid 2px;
     background-color: black;
-    color: orange;
+    color: #8AB83E;
     border-radius: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.button-vacature:hover    {
+    cursor: pointer;
+    background-color: #404040;
+    color: white;
 }
 
 
