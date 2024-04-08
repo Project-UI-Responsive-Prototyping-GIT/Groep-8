@@ -26,8 +26,8 @@ async function formSubmission() {
 
         // Alert de user
         alert(data.success ? `Bedankt ${data.naam} voor het reserveren! op ${data.datum} om ${data.tijd}:00 Uw krijgt een bevestiging per mail. op ${data.email}` : data.error);
-        console.log(data); // bug testing
-        console.log(response); // bug testing
+        console.log(data); // debug TODO: remove
+        console.log(response); // debug TODO: remove
 
     } catch (error) {
         console.error(`onverwachte error met de fetch: ${error.message}`);

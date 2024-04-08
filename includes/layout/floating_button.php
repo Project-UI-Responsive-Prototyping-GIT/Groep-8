@@ -2,7 +2,7 @@
     <nav id="menu-floating-btn" style="display: none;"> <!-- styled toegevoegd zodat de button meteen op de eerste klik werkt -->
         <ul>
             <li>
-                <button onclick="showForm()">Wilt u reserveren?</button>
+                <button id="floatingBtnReserveer">Wilt u reserveren?</button> <!-- onclick="showForm()" -->
             </li>
         </ul>
         <section id="booking-section">
@@ -22,8 +22,8 @@
             </form>
         </section>
     </nav>
-    <button onclick="toggleMenu()">
-        <img src="./images/image (1) 1.png" alt="pizzaden logo knop">
+    <button id="floatingBtnImage"> <!-- onclick="toggleMenu()" -->
+        <img src="./images/logo/floatingButtonLogo.png" alt="pizzaden logo knop">
         <i class="fa-solid fa-xmark fa-2xl" id="menu-floating-btn-closing"></i>
     </button>
 </aside>
