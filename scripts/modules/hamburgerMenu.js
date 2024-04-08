@@ -1,5 +1,0 @@
-export function hamburgerMenuTogleEvent() {
-    document.getElementById('menuToggle').addEventListener('click', function() {
-        document.getElementById('menu').classList.toggle('active');
-    });
-}

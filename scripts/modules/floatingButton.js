@@ -1,4 +1,4 @@
-export function toggleMenu() {
+function toggleMenu() { // FIXME: add event listener to the button
     const menu = document.getElementById('menu-floating-btn');
     const closebtn = document.getElementById('menu-floating-btn-closing');
     const buttonImg = document.querySelector('#floating-button > button > img');
@@ -42,7 +42,7 @@ function bookingFormStyle() {
     }
 }
 
-export function showForm() {
+function showForm() { // FIXME: add event listener to the button
     const bookingForm = document.getElementById('booking-form');
     const menuQuestion = document.querySelector('#menu-floating-btn > ul > li > button');
 
@@ -58,7 +58,17 @@ function closeForm() {
     bookingFormStyle();
 }
 
-export function closeEvent() {
+export function toggleMenuEvent() {
+    const button = document.getElementById('floatingBtnImage'); // floating-button
+    button.addEventListener('click', toggleMenu);
+}
+
+export function showFormEvent() {
+    const menuQuestion = document.getElementById('floatingBtnReserveer');
+    menuQuestion.addEventListener('click', showForm);
+}
+
+export function closeFormEvent() {
     document.addEventListener('click', function(event) {
         const menu = document.getElementById('menu-floating-btn');
         const closebtn = document.getElementById('menu-floating-btn-closing');

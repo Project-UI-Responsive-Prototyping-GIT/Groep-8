@@ -1,4 +1,8 @@
 <?php
+    session_start();
+
+    $_SESSION["headerPages"] = ['index' => 'HOME', 'ourMenu' => 'MENU', 'aboutUs' => 'ABOUT', 'vacatures' => 'VACATURES', 'gallery' => 'GALLERY'];
+
     /**
      * Laadt de header of footer van the layout file.
      *
