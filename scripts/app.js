@@ -101,6 +101,6 @@ if (window.location.pathname.includes('/index.php') || window.location.pathname.
     handleAboutPage();
 } else if (window.location.pathname.includes('/gallery.php')) {
     handleGalleryPage();
-} else if (!window.location.pathname.includes('/vacatures.php') || !window.location.pathname.includes('/reviews.php')) {
+} else if (!window.location.pathname.includes('/vacatures.php') && !window.location.pathname.includes('/reviews.php')) {
     handleFloatingButton();
 }
