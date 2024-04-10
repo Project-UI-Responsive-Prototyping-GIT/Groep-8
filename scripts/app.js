@@ -65,30 +65,42 @@ const galleryFotos = [
     new GalleryFotos('https://picsum.photos/200', 'Gallery 10')
 ];
 
-toggleMenuEvent();
-showFormEvent();
-closeFormEvent();
-formSubmitEvent();
+function handleFloatingButton() {
+    toggleMenuEvent();
+    showFormEvent();
+    closeFormEvent();
+    formSubmitEvent();
+}
 
-if (window.location.pathname.includes('/index.php') || window.location.pathname.includes('/self%20project/')) {
+function handleIndexPage() {
     showSlides();
     event.startEvent();
 }
 
-if (window.location.pathname.includes('/ourMenu.php')) {
+function handleMenuPage() {
     menuNavigationEvents();
-
-    // laat de pizza menu standaart zien
-    MenuItem.defaultLoad();
+    MenuItem.defaultLoad(); // laat de pizza menu standaart zien
 }
 
-if (window.location.pathname.includes('/aboutUs.php')) {
+function handleAboutPage() {
     countMenuItems();
     yearsOfExperience();
 }
 
-if (window.location.pathname.includes('/gallery.php')) {
+function handleGalleryPage() {
     galleryFotos.forEach(foto => {
         foto.render();
     });
+}
+
+if (window.location.pathname.includes('/index.php') || window.location.pathname.endsWith('/Groep-8/')) {
+    handleIndexPage();
+} else if (window.location.pathname.includes('/ourMenu.php')) {
+    handleMenuPage();
+} else if (window.location.pathname.includes('/aboutUs.php')) {
+    handleAboutPage();
+} else if (window.location.pathname.includes('/gallery.php')) {
+    handleGalleryPage();
+} else if (!window.location.pathname.includes('/vacatures.php') || !window.location.pathname.includes('/reviews.php')) {
+    handleFloatingButton();
 }

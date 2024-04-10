@@ -693,15 +693,15 @@ footer > p {
 
 /* vacatures */
 
-.main-container {
+#main-vacatures {
     background-color: black;
     display: grid;
     gap: 5rem;
     grid-template-rows: auto;
     padding: 2rem;
     justify-content: center;
-
 }
+
 .box    {
     border: 0.5rem;
     border-color: #404040;
