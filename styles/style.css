@@ -700,6 +700,7 @@ footer > p {
     grid-template-rows: auto;
     padding: 2rem;
     justify-content: center;
+    color:
 
 }
 .box    {
@@ -731,8 +732,46 @@ footer > p {
 
 
 /* reviews */
+.flexbox-review {
+    display: flex;
+}
 .reviews-container {
     background-color: #404040;
+    color: white;
+    padding: 1rem 1rem;
 }
+.rating {
+    border: 2px solid black;
+    color: white;
 
-/* media queries */
+}
+.main-review {
+    margin: 1rem 1rem;
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.rating-submit  {
+    border: black solid 2px;
+    background-color: black;
+    color: #8AB83E;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    color: white;
+}
+/* Add this CSS */
+.review    {
+    background-image: url("https://www.teahub.io/photos/full/32-327924_pizza-background.jpg");
+    background-size: cover;
+}
+.rating-opties  {
+    padding: 0.25rem
+}
+.rating-opties input[type="radio"]:checked + label {
+    background-color: green;
+    padding: 0.25rem
+}
+.main-review-flex   {
+    display: flex;
+    flex-direction: column;
+}

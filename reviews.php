@@ -8,29 +8,65 @@
     
     loadView('header', $metaData);
 ?>
-<main class="main-container">
+<main class="main-container review">
     <!-- TODO: maak gebruik van css-flexbox -->
-    <section id="reviews-container">
-        <section id="reviews-tolal">
-            <article id="reviews-total-card-head">
-                <h2>Pizzaden reviews</h2>
+    <section class="reviews-container">
+    <form action="" method="get">
+        Beoordeling<br><br>
+        <label for="name">Naam:<br></label>
+        <input class="rating" type="text" name="name"><br>
+
+        <label for="description">Schrijf hier je beoordeling<br></label>
+        <textarea class="rating" id="textarea" name="description" rows="5" cols="50"></textarea><br>
+
+        <label for="rating">Rating:</label>
+        <div class="rating-opties">
+            <?php for ($i = 1; $i <= 5; $i++) : ?>
+                <input class="rating-opties" type="radio" name="rating" value="<?php echo $i; ?>" id="rating<?php echo $i; ?>">
+                <label for="rating<?php echo $i; ?>"><?php echo $i; ?></label>
+            <?php endfor; ?>
+        </div><br>
+
+        <input class="rating-submit" type="submit" value="Submit">
+    </form>
+    <section class="flexbox-review">
+    <?php
+
+            if ($_SERVER["REQUEST_METHOD"] == "GET") {
+                if (isset($_GET['name']) && !empty($_GET['name']) &&
+                    isset($_GET['description']) && !empty($_GET['description']) &&
+                    isset($_GET['rating']) && !empty($_GET['rating'])) {
+                    
+                    echo "<section class=''reviews-container'>";
+                    echo "<p>{$_GET['name']}</p>";
+                    echo "<p class='uitkomstbeschrijving'>{$_GET['description']}</p>";
+                    echo "<p>Rating: {$_GET['rating']}</p>";
+                    echo "</article>";
+                } else {
+                    echo "<p>Vul alsjeblieft alle velden in.</p>";
+                }
+            }
+            ?>
+        <section class="main-review-flex">
+            <article class="main-review">
+                <p>John</p>
+                <p class="uitkomstbeschrijving">Echt de lekkerste pizza ooit gegeten</p>
+                <p>Rating: 5</p>
             </article>
-            <section id="reviews-total-card-body">
-                <article class="reviews-total-card-body-colm">
-                    <h3><b><span id="reviews-average-rating">0</span> / 5</b></h3>
-                    <section id="reviews-average-stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </section>
-                    <h3><span id="reviews-total-reviews">0</span> Reviews</h3>
-                </article>
-                <section class="reviews-total-card-body-colm"></section>
-            </section>
+        
+            <article class="main-review">
+                <p>Karen</p>
+                <p class="uitkomstbeschrijving">Valt mee, heb beter gegeten</p>
+                <p>Rating: 2</p>
+            </article>
+
+            <article class="main-review">
+                <p>Michael</p>
+                <p class="uitkomstbeschrijving">Average pizza, but good value for money.</p>
+                <p>Rating: 3</p>
+            </article>
         </section>
-    </section>
+        </section>
 </main>
 <?php
     loadView('footer');
