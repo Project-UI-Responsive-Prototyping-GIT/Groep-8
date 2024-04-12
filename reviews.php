@@ -9,7 +9,6 @@
     loadView('header', $metaData);
 ?>
 <main class="main-container review">
-    <!-- TODO: maak gebruik van css-flexbox -->
     <section class="reviews-container">
     <form action="" method="get">
         Beoordeling<br><br>
@@ -17,7 +16,7 @@
         <input class="rating" type="text" name="name"><br>
 
         <label for="description">Schrijf hier je beoordeling<br></label>
-        <textarea class="rating" id="textarea" name="description" rows="5" cols="50"></textarea><br>
+        <textarea class="rating" id="textarea-review" name="description" rows="5" cols="50"></textarea><br>
 
         <label for="rating">Rating:</label>
         <div class="rating-opties">
@@ -30,14 +29,15 @@
         <input class="rating-submit" type="submit" value="Submit">
     </form>
     <section class="flexbox-review">
-    <?php
+        <section class="main-review-flex">
+                <?php
 
             if ($_SERVER["REQUEST_METHOD"] == "GET") {
                 if (isset($_GET['name']) && !empty($_GET['name']) &&
                     isset($_GET['description']) && !empty($_GET['description']) &&
                     isset($_GET['rating']) && !empty($_GET['rating'])) {
                     
-                    echo "<section class=''reviews-container'>";
+                    echo "<article class='main-review'>";
                     echo "<p>{$_GET['name']}</p>";
                     echo "<p class='uitkomstbeschrijving'>{$_GET['description']}</p>";
                     echo "<p>Rating: {$_GET['rating']}</p>";
@@ -47,7 +47,6 @@
                 }
             }
             ?>
-        <section class="main-review-flex">
             <article class="main-review">
                 <p>John</p>
                 <p class="uitkomstbeschrijving">Echt de lekkerste pizza ooit gegeten</p>

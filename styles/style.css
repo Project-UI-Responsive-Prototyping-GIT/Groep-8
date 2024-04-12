@@ -461,7 +461,6 @@ footer > p {
 
 #home-subscribe-newsletter > form > input[type="email"] {
     color: #404040;
-    /* padding: 1rem 0 1rem 1rem; */
     width: 70%;
     height: 100%;
 }
@@ -737,7 +736,9 @@ footer > p {
 .reviews-container {
     background-color: #404040;
     color: white;
-    padding: 1rem 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 2rem;
 }
 .rating {
     border: 2px solid black;
@@ -758,13 +759,20 @@ footer > p {
     padding: 0.5rem;
     color: white;
 }
-/* Add this CSS */
+.rating-submit:hover    {
+    background-color: green;
+    cursor: pointer;
+}
 .review    {
     background-image: url("https://www.teahub.io/photos/full/32-327924_pizza-background.jpg");
     background-size: cover;
 }
 .rating-opties  {
     padding: 0.25rem
+}
+.reviews-container > form > input[type="text"], #textarea-review   {
+    background-color: white;
+    color: black;
 }
 .rating-opties input[type="radio"]:checked + label {
     background-color: green;
@@ -773,4 +781,16 @@ footer > p {
 .main-review-flex   {
     display: flex;
     flex-direction: column;
+}
+@media screen and (max-width: 1150px) {
+    #menu-discover-items {
+        grid-template-columns: repeat(3, 30%);
+        max-width: 100%;
+}
+}
+@media screen and (max-width: 750px) {
+    #menu-discover-items {
+        grid-template-columns: repeat(2, 45%);
+        max-width: 100%;
+    }   
 }
