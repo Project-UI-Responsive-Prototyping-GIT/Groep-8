@@ -8,7 +8,7 @@
     
     loadView('header', $metaData);
 ?>
-<main class="main-container">
+<main class="main-container" id="main-vacatures">
     <section class="box box1">
         <h1 class="bold">Software Developer</h1>
         <img src="https://picsum.photos/200">
